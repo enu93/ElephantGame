@@ -19,6 +19,4 @@ while True:
     if len(points) > 1:
         pygame.draw.lines(screen, color, False, points, 5)
 
-
-
     pygame.display.update()
