@@ -9,7 +9,6 @@ pygame.init()
 screen = pygame.display.set_mode((640, 320), 0, 32)
 background = pygame.image.load(bif).convert()
 ball = pygame.image.load(mif).convert_alpha()
-color = (255, 255, 0)
 
 x = 0
 clock = pygame.time.Clock()
@@ -28,9 +27,8 @@ while True:
     # calculate distance move(dm) = speed * time
     # add distance move with x co-orident
     # move x with given time 
-    
     milli = clock.tick()
-    seconds = milli/1000.
+    seconds = milli/10000.
     dm = seconds * speed
     x += dm
 
